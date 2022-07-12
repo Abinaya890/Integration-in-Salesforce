@@ -7,3 +7,7 @@ global  class Integrationsample {
         return cricket;
     }
 }
+
+
+To Execute:
+/services/apexrest/food/cafe/1
