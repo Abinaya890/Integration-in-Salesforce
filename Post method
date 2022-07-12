@@ -16,5 +16,12 @@ global class Postintegration {
 
 
 
+To execute:
+ /services/apexrest/name/abi/1
+ 
+ {"name":"snr",
+"phone":"9736363733"
+}
+
 
  
