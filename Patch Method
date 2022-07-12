@@ -20,4 +20,9 @@ global class updateint
  
 }
 
+To execute:
+/services/apexrest/ins/v1/0015j00000ge3JWAAY
+{
+"name" : "juy"
+}
 
