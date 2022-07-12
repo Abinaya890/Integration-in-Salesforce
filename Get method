@@ -1,3 +1,4 @@
+1.
 @Restresource(Urlmapping='/food/cafe/*')
 global  class Integrationsample {
     global final static string cricket='snr cricket ground';
@@ -11,3 +12,24 @@ global  class Integrationsample {
 
 To Execute:
 /services/apexrest/food/cafe/1
+
+
+
+2.
+@restresource (urlmapping ='/acc/name/*')
+global class Getintegration{
+    
+    @httpget
+    global static list<account> ac(){
+        RestRequest req = RestContext.request;
+         String accountId=req.requestURI.substring(req.requestURI.lastIndexOf('/')+1);
+        return [select name, (select lastname from contacts) from account where id = :accountId];
+        
+        
+        
+    }
+}
+
+
+To execute:
+/services/apexrest/acc/name/0015j00000ge2zpAAA
